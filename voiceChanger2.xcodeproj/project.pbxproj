@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E74534151F624DA400DB1E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74534141F624DA400DB1E5D /* AppDelegate.swift */; };
-		E74534171F624DA400DB1E5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74534161F624DA400DB1E5D /* ViewController.swift */; };
+		E74534171F624DA400DB1E5D /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74534161F624DA400DB1E5D /* RecordSoundsViewController.swift */; };
 		E745341A1F624DA400DB1E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E74534181F624DA400DB1E5D /* Main.storyboard */; };
 		E745341C1F624DA400DB1E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E745341B1F624DA400DB1E5D /* Assets.xcassets */; };
 		E745341F1F624DA400DB1E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E745341D1F624DA400DB1E5D /* LaunchScreen.storyboard */; };
 		E745342A1F624DA400DB1E5D /* voiceChanger2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74534291F624DA400DB1E5D /* voiceChanger2Tests.swift */; };
 		E74534351F624DA400DB1E5D /* voiceChanger2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74534341F624DA400DB1E5D /* voiceChanger2UITests.swift */; };
+		E77CCBCF1F625BBF00312E95 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77CCBCE1F625BBF00312E95 /* PlaySoundsViewController.swift */; };
+		E77CCBD11F62673200312E95 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77CCBD01F62673200312E95 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E74534111F624DA400DB1E5D /* voiceChanger2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voiceChanger2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74534141F624DA400DB1E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E74534161F624DA400DB1E5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E74534161F624DA400DB1E5D /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		E74534191F624DA400DB1E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E745341B1F624DA400DB1E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E745341E1F624DA400DB1E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		E74534301F624DA400DB1E5D /* voiceChanger2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voiceChanger2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74534341F624DA400DB1E5D /* voiceChanger2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voiceChanger2UITests.swift; sourceTree = "<group>"; };
 		E74534361F624DA400DB1E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77CCBCE1F625BBF00312E95 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		E77CCBD01F62673200312E95 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				E74534141F624DA400DB1E5D /* AppDelegate.swift */,
-				E74534161F624DA400DB1E5D /* ViewController.swift */,
+				E74534161F624DA400DB1E5D /* RecordSoundsViewController.swift */,
 				E74534181F624DA400DB1E5D /* Main.storyboard */,
 				E745341B1F624DA400DB1E5D /* Assets.xcassets */,
 				E745341D1F624DA400DB1E5D /* LaunchScreen.storyboard */,
 				E74534201F624DA400DB1E5D /* Info.plist */,
+				E77CCBCE1F625BBF00312E95 /* PlaySoundsViewController.swift */,
+				E77CCBD01F62673200312E95 /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = voiceChanger2;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					E74534101F624DA400DB1E5D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = WEKPZFJ35M;
 						ProvisioningStyle = Automatic;
 					};
 					E74534241F624DA400DB1E5D = {
@@ -259,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74534171F624DA400DB1E5D /* ViewController.swift in Sources */,
+				E74534171F624DA400DB1E5D /* RecordSoundsViewController.swift in Sources */,
+				E77CCBD11F62673200312E95 /* PlaySoundsViewController+Audio.swift in Sources */,
+				E77CCBCF1F625BBF00312E95 /* PlaySoundsViewController.swift in Sources */,
 				E74534151F624DA400DB1E5D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WEKPZFJ35M;
 				INFOPLIST_FILE = voiceChanger2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IDK.voiceChanger2;
@@ -426,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WEKPZFJ35M;
 				INFOPLIST_FILE = voiceChanger2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IDK.voiceChanger2;
@@ -507,6 +518,7 @@
 				E745343B1F624DA400DB1E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E745343C1F624DA400DB1E5D /* Build configuration list for PBXNativeTarget "voiceChanger2Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +527,7 @@
 				E745343E1F624DA400DB1E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E745343F1F624DA400DB1E5D /* Build configuration list for PBXNativeTarget "voiceChanger2UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +536,7 @@
 				E74534411F624DA400DB1E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
