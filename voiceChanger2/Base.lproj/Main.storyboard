@@ -50,9 +50,8 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcG-tn-kKg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9A-A1-Fe6">
-                                <rect key="frame" x="16" y="94" width="343" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9A-A1-Fe6">
+                                <rect key="frame" x="16" y="94" width="343" height="42"/>
                                 <attributedString key="attributedText">
                                     <fragment content="voice recorder thing">
                                         <attributes>
@@ -66,12 +65,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.73618978981719208" green="0.83022545378004631" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="y9A-A1-Fe6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="2z1-mK-RCX"/>
                             <constraint firstItem="C19-dG-Z7V" firstAttribute="top" secondItem="Rt2-dY-xmj" secondAttribute="bottom" constant="37" id="DXg-vG-55Q"/>
                             <constraint firstItem="Rt2-dY-xmj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBQ-wV-c4y"/>
                             <constraint firstItem="10z-ra-QtV" firstAttribute="top" secondItem="Rt2-dY-xmj" secondAttribute="bottom" constant="8" id="FiX-bq-NpJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="y9A-A1-Fe6" secondAttribute="leading" id="MGb-g7-Zj0"/>
                             <constraint firstItem="C19-dG-Z7V" firstAttribute="centerX" secondItem="Rt2-dY-xmj" secondAttribute="centerX" id="WKz-5X-RYl"/>
                             <constraint firstItem="10z-ra-QtV" firstAttribute="centerX" secondItem="Rt2-dY-xmj" secondAttribute="centerX" id="hSU-GJ-0zP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y9A-A1-Fe6" secondAttribute="trailing" id="iSw-aM-6RU"/>
                             <constraint firstItem="Rt2-dY-xmj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jVw-Dw-4DP"/>
+                            <constraint firstItem="y9A-A1-Fe6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tqb-kt-xpK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Npy-8r-6ux"/>
