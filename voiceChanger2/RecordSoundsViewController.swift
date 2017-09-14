@@ -35,16 +35,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     
     func setUI(isRecording:Bool) {
-        if isRecording == true {
-            stopRecordingButton.isEnabled = true
-            recordingLabel.text = "currently stealing ur identity"
-            recordButton.isEnabled = false
-        } else {
-            stopRecordingButton.isEnabled = false
-            recordButton.isEnabled = true
-            recordingLabel.text = "Tap to Record"
-        }
-        
+        recordingLabel.text = isRecording ? "Recording" : "Tap to record"
+        recordButton.isEnabled = isRecording ? false : true
+        stopRecordingButton.isEnabled = isRecording ? true : false  
     }
     
         @IBAction func recordAudio(_ sender: AnyObject) {
